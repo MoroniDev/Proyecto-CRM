@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Corporativo | Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                <h1>CRM Corp</h1>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#" class="active"><i class="fas fa-home"></i><span>Dashboard</span></a></li>
+                <li><a href="#"><i class="fas fa-users"></i><span>Clientes</span></a></li>
+                <li><a href="#"><i class="fas fa-tasks"></i><span>Tareas</span></a></li>
+                <li><a href="#"><i class="fas fa-calendar-alt"></i><span>Calendario</span></a></li>
+                <li><a href="#"><i class="fas fa-chart-bar"></i><span>Reportes</span></a></li>
+                <li><a href="#"><i class="fas fa-cog"></i><span>Configuración</span></a></li>
+            </ul>
+            
+            <div class="user-profile">
+                <div class="user-avatar">JS</div>
+                <div class="user-info">
+                    <h4>Juan Sánchez</h4>
+                    <p>Administrador</p>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <h2>Dashboard</h2>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar clientes, tareas...">
+                </div>
+                <div class="user-actions">
+                    <div class="notification">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </div>
+                    <div class="user-avatar" style="background-color: var(--accent-color);">JS</div>
+                </div>
+            </header>
+            
+            <!-- Stats Cards -->
+            <section class="stats-cards">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon customers">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i> 12%
+                        </div>
+                    </div>
+                    <div class="stat-info">
+                        <h3>1,254</h3>
+                        <p>Clientes Totales</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon sales">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i> 8%
+                        </div>
+                    </div>
+                    <div class="stat-info">
+                        <h3>342</h3>
+                        <p>Ventas este mes</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon tasks">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="stat-change negative">
+                            <i class="fas fa-arrow-down"></i> 5%
+                        </div>
+                    </div>
+                    <div class="stat-info">
+                        <h3>18</h3>
+                        <p>Tareas pendientes</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon revenue">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i> 22%
+                        </div>
+                    </div>
+                    <div class="stat-info">
+                        <h3>$42,580</h3>
+                        <p>Ingresos mensuales</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Dashboard Content -->
+            <section class="dashboard-content">
+                <div class="left-column">
+                    <!-- Recent Clients -->
+                    <div class="dashboard-section">
+                        <div class="section-header">
+                            <h3>Clientes Recientes</h3>
+                            <a href="#">Ver todos</a>
+                        </div>
+                        
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Cliente</th>
+                                        <th>Empresa</th>
+                                        <th>Fecha de ingreso</th>
+                                        <th>Estado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="client-info">
+                                                <div class="client-avatar">MA</div>
+                                                <div>
+                                                    <div class="client-name">María Alvarez</div>
+                                                    <div class="client-company">maria@empresa.com</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>TechCorp S.A.</td>
+                                        <td>15/06/2023</td>
+                                        <td><span class="status active">Activo</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="client-info">
+                                                <div class="client-avatar">CR</div>
+                                                <div>
+                                                    <div class="client-name">Carlos Rodríguez</div>
+                                                    <div class="client-company">carlos@consultores.com</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Consultores Asoc.</td>
+                                        <td>10/06/2023</td>
+                                        <td><span class="status active">Activo</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="client-info">
+                                                <div class="client-avatar">LR</div>
+                                                <div>
+                                                    <div class="client-name">Laura Ramírez</div>
+                                                    <div class="client-company">laura@innovate.com</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Innovate Labs</td>
+                                        <td>05/06/2023</td>
+                                        <td><span class="status pending">Pendiente</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="client-info">
+                                                <div class="client-avatar">PG</div>
+                                                <div>
+                                                    <div class="client-name">Pedro González</div>
+                                                    <div class="client-company">pedro@global.com</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Global Solutions</td>
+                                        <td>01/06/2023</td>
+                                        <td><span class="status inactive">Inactivo</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="right-column">
+                    <!-- Tasks -->
+                    <div class="dashboard-section">
+                        <div class="section-header">
+                            <h3>Tareas Pendientes</h3>
+                            <a href="#">Ver todas</a>
+                        </div>
+                        
+                        <ul class="tasks-list">
+                            <li class="task-item">
+                                <div class="task-checkbox">
+                                    <input type="checkbox">
+                                </div>
+                                <div class="task-content">
+                                    <div class="task-title">Preparar informe trimestral</div>
+                                    <div class="task-due">Vence hoy</div>
+                                </div>
+                                <div class="task-actions">
+                                    <button><i class="fas fa-edit"></i></button>
+                                    <button><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </li>
+                            <li class="task-item">
+                                <div class="task-checkbox">
+                                    <input type="checkbox">
+                                </div>
+                                <div class="task-content">
+                                    <div class="task-title">Llamar a cliente importante</div>
+                                    <div class="task-due urgent">Vence mañana</div>
+                                </div>
+                                <div class="task-actions">
+                                    <button><i class="fas fa-edit"></i></button>
+                                    <button><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </li>
+                            <li class="task-item">
+                                <div class="task-checkbox">
+                                    <input type="checkbox" checked>
+                                </div>
+                                <div class="task-content">
+                                    <div class="task-title">Actualizar base de datos</div>
+                                    <div class="task-due">Completada</div>
+                                </div>
+                                <div class="task-actions">
+                                    <button><i class="fas fa-edit"></i></button>
+                                    <button><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </li>
+                            <li class="task-item">
+                                <div class="task-checkbox">
+                                    <input type="checkbox">
+                                </div>
+                                <div class="task-content">
+                                    <div class="task-title">Revisar contrato con proveedor</div>
+                                    <div class="task-due">Vence en 3 días</div>
+                                </div>
+                                <div class="task-actions">
+                                    <button><i class="fas fa-edit"></i></button>
+                                    <button><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Calendar -->
+                    <div class="dashboard-section">
+                        <div class="section-header">
+                            <h3>Calendario</h3>
+                            <a href="#">Ver calendario completo</a>
+                        </div>
+                        
+                        <div class="calendar">
+                            <div class="calendar-header">
+                                <h4>Junio 2023</h4>
+                                <div class="calendar-nav">
+                                    <button><i class="fas fa-chevron-left"></i></button>
+                                    <button><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            
+                            <div class="calendar-weekdays">
+                                <div>Lun</div>
+                                <div>Mar</div>
+                                <div>Mié</div>
+                                <div>Jue</div>
+                                <div>Vie</div>
+                                <div>Sáb</div>
+                                <div>Dom</div>
+                            </div>
+                            
+                            <div class="calendar-days">
+                                <div>29</div>
+                                <div>30</div>
+                                <div>31</div>
+                                <div>1</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                                <div>5</div>
+                                <div>6</div>
+                                <div>7</div>
+                                <div>8</div>
+                                <div>9</div>
+                                <div>10</div>
+                                <div>11</div>
+                                <div class="today event">12</div>
+                                <div>13</div>
+                                <div>14</div>
+                                <div class="event">15</div>
+                                <div>16</div>
+                                <div>17</div>
+                                <div>18</div>
+                                <div>19</div>
+                                <div>20</div>
+                                <div>21</div>
+                                <div>22</div>
+                                <div>23</div>
+                                <div>24</div>
+                                <div>25</div>
+                                <div>26</div>
+                                <div>27</div>
+                                <div>28</div>
+                                <div>29</div>
+                                <div>30</div>
+                                <div>1</div>
+                                <div>2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <footer class="footer">
+                <p>CRM Corporativo © 2023 - Todos los derechos reservados</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
